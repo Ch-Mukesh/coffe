@@ -1,72 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffe-Site</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            margin: 0;
-            border: 0;
-            background-color: black;
-            position: fixed;
-            display: flex;
-            justify-content: space-between;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-         header div {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 10px;
-        }
+      header {
+        background-color: rgba(12, 11, 11, 0.8);
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+        position: fixed;
+        color: white;
+      }
 
-        header a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-        }
+      header div {
+        display: flex;
+        gap: 16px;
+        margin-right: 26px;
+      }
 
-        header a:hover {
-            text-decoration: underline;
-        }
+      header a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+      }
 
-        #hero{
-            background: url("hero.jpg");
-            background-size:cover;
-            background-repeat: no-repeat;
-            width: 100%;
-        }
-        h1{
-            border: 0;
-        }
+      header a:hover {
+        color: rgb(91, 44, 44);
+        text-decoration: dashed;
+      }
+
+      #hero {
+        background-image: url("hero.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(47, 19, 19);
+        height: 900px;
+        text-align: center;
+        gap: 20px;
+      }
+
+      #hero button {
+        background-color: rgb(51, 16, 16);
+        color: rgb(215, 207, 207);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      #first-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 100px;
+        background-color: rgb(236, 228, 228);
+        gap: 70px;
+        color: rgb(91, 44, 44);
+      }
+
+      .card-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 40px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .card:hover {
+        color: rgb(164, 104, 104);
+        /* color: rgb(91, 44, 44); */
+      }
+
+      #second-section {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 100px;
+        gap: 70px;
+      }
+
+
+
+      #second-section .card {
+        color: white;
+        /* background-color: rgb(91, 44, 44); */
+        gap: 22px;
+        padding: 40px;
+        border-top-right-radius: 40%;
+        border-bottom-left-radius: 40%;
+      }
+
+
+
+      #second-section img {
+        width: 100%;
+        border-top-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+      }
+
+
+      #second-section h3,
+      h1 {
+        color: rgb(125, 40, 40);
+      }
+
+      #second-section p {
+        color: rgb(236, 228, 228);
+        font-size: medium;
+      }
+
+      #third-section {
+        background-color: rgb(236, 228, 228);
+      }
+
+      .separator-image{
+        width: 22% !important;
+      }
+
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="https://corretto.qodeinteractive.com/wp-content/themes/corretto/assets/img/logo-light.png"
-            width="150px">
-        <div>
-            <a href="">Home</a>
-            <a href="">Pages</a>
-            <a href="">Portfolio</a>
-            <a href="">Blog</a>
-            <a href="">Shop</a>
-            <a href="">Elements</a>
-            <i class="fa fa-shopping-cart" style="font-size:20px;color: white;"></i>
-            <i class="fa fa-search" style="font-size:20px; color: white;"></i>
-        </div>
+      <img
+        src="https://corretto.qodeinteractive.com/wp-content/themes/corretto/assets/img/logo-light.png"
+        width="150px"
+      />
+      <div>
+        <a href="">Home</a>
+        <a href="">Pages</a>
+        <a href="">Portfolio</a>
+        <a href="">Blog</a>
+        <a href="">Shop</a>
+        <a href="">Elements</a>
+        <a href="">Contact</a>
+        <a href=""><img src="market.png" alt="" /></a>
+      </div>
     </header>
 
     <div id="hero">
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-slider-img-1.png" alt="">
+      <!-- <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-slider-img-1.png" alt=""> -->
+      <h1 style="margin-top: 270px">COFFEE MASTERS</h1>
+      <img
+        src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png"
+        alt=""
+      />
+      <p style="font-size: medium">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit
+      </p>
+      <button>Shop Now</button>
     </div>
-</body>
 
+    <div id="first-section">
+      <div
+        style="
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        "
+      >
+        <h1>Our Delicious Offerings</h1>
+        <img
+          src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png"
+          alt=""
+        />
+        <p style="font-size: large">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Quod eos ipsa magni quis eligendi. Atque?
+        </p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-5.png"
+            alt=""
+            width="100px"
+          />
+          <h3>Types Of Coffee</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur <br />
+            adipisicing elit. Deleniti, asperiores!
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-6.png"
+            alt=""
+            width="100px"
+          />
+          <h3>Bean Varieties</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur <br />
+            adipisicing elit. Deleniti, asperiores!
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-7.png"
+            alt=""
+            width="100px"
+          />
+          <h3>Coffee Blends</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur <br />
+            adipisicing elit. Deleniti, asperiores!
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-8.png"
+            alt=""
+            width="100px"
+          />
+          <h3>Coffee To Go</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur <br />
+            adipisicing elit. Deleniti, asperiores!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="second-section">
+      <div
+        style="
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          color: white;
+        "
+      >
+        <h1>THE COFFEE HERALD</h1>
+        <img
+          src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png"
+          alt=""
+          class="separator-image"
+        />
+        <p style="font-size: large">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos ipsa
+          magni quis eligendi. Atque?
+          <br />
+          Error officiis cumque necessitatibus dolorum eum magni eius id,
+          laborum debitis, est nemo. Accusantium iure quidem officiis libero sed
+        </p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-1.jpg"
+            alt=""
+            width="100px"
+          />
+          <h3>Prep Techniques</h3>
+          <p>
+            Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue.
+            Curabitur ullamcorper ultricies nisi,
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-2.jpg"
+            alt=""
+            width="100px"
+          />
+          <h3>Bean Varieties</h3>
+          <p>
+            Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue.
+            Curabitur ullamcorper ultricies nisi,
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-3.jpg"
+            alt=""
+            width="100px"
+          />
+          <h3>Coffee Blends</h3>
+          <p>
+            Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue.
+            Curabitur ullamcorper ultricies nisi,
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="third-section">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+        praesentium aut nobis velit voluptatem fugiat architecto cumque suscipit
+        rerum distinctio.
+      </h1>
+
+    </div>
+  </body>
 </html>
